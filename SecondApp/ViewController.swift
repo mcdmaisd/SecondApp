@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         resultLabel.isUserInteractionEnabled = true
         optional()
+        
         let url = URL(string: "https://w7.pngwing.com/pngs/869/485/png-transparent-google-logo-computer-icons-google-text-logo-google-logo.png")
         imageview.kf.setImage(with: url)
         }
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
         1. if
         2. optional binding: if let, guard
      */
+    
     func optional() {
         var nickname: String? = "새우깡"
         var age: Int? = 22
