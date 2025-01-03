@@ -609,7 +609,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="125" id="aAD-qZ-qe9" customClass="UserTableViewCell" customModule="SecondApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="125" id="aAD-qZ-qe9" customClass="UserTableViewCell" customModule="SecondApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aAD-qZ-qe9" id="PLw-O4-xQa">
@@ -623,29 +623,46 @@
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RfI-ee-ffv">
-                                            <rect key="frame" x="141" y="42.666666666666664" width="236" height="39.999999999999993"/>
+                                            <rect key="frame" x="141" y="23.333333333333336" width="236" height="78.666666666666657"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTT-OY-8dJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="236" height="17.666666666666668"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="236" height="22.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYn-HN-3cl">
-                                                    <rect key="frame" x="0.0" y="22.666666666666664" width="236" height="17.333333333333336"/>
+                                                    <rect key="frame" x="0.0" y="27.333333333333329" width="236" height="22.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7v-g8-vHy">
+                                                    <rect key="frame" x="0.0" y="54.999999999999993" width="236" height="23.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="RfI-ee-ffv" secondAttribute="height" multiplier="59:10" id="GT5-Rp-8Aa"/>
+                                                <constraint firstAttribute="width" secondItem="RfI-ee-ffv" secondAttribute="height" multiplier="3:1" id="GT5-Rp-8Aa"/>
                                             </constraints>
                                         </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRC-3O-JNp">
+                                            <rect key="frame" x="16" y="8" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="X15-lU-qDE"/>
+                                                <constraint firstAttribute="height" constant="40" id="nHO-Dm-Uqu"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="rectangle.portrait.and.arrow.forward.fill" catalog="system"/>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="YRC-3O-JNp" firstAttribute="leading" secondItem="YQr-hK-UqB" secondAttribute="leading" id="6tO-jz-2KS"/>
                                         <constraint firstItem="YQr-hK-UqB" firstAttribute="top" secondItem="PLw-O4-xQa" secondAttribute="top" constant="8" id="AMe-wO-yEb"/>
                                         <constraint firstAttribute="trailing" secondItem="RfI-ee-ffv" secondAttribute="trailing" constant="16" id="VCf-NX-GIz"/>
+                                        <constraint firstItem="YRC-3O-JNp" firstAttribute="top" secondItem="YQr-hK-UqB" secondAttribute="top" id="WFa-qp-ihy"/>
                                         <constraint firstItem="RfI-ee-ffv" firstAttribute="centerY" secondItem="PLw-O4-xQa" secondAttribute="centerY" id="cRq-Nx-3Ap"/>
                                         <constraint firstItem="RfI-ee-ffv" firstAttribute="leading" secondItem="YQr-hK-UqB" secondAttribute="trailing" constant="16" id="f1t-2w-10u"/>
                                         <constraint firstAttribute="bottom" secondItem="YQr-hK-UqB" secondAttribute="bottom" constant="8" id="rdJ-dp-8Qr"/>
@@ -653,8 +670,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="likeButton" destination="YRC-3O-JNp" id="sC5-gx-aZa"/>
                                     <outlet property="messageLabel" destination="wYn-HN-3cl" id="fYr-Ja-YbB"/>
                                     <outlet property="nameLabel" destination="zTT-OY-8dJ" id="ip2-XU-wNa"/>
+                                    <outlet property="phoneLabel" destination="O7v-g8-vHy" id="6hi-Og-0F7"/>
                                     <outlet property="profileImageView" destination="YQr-hK-UqB" id="hGy-Ke-FcW"/>
                                 </connections>
                             </tableViewCell>
@@ -671,6 +690,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="rectangle.portrait.and.arrow.forward.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
